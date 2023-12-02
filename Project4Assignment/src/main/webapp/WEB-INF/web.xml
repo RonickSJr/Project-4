@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<!-- General description of your Web application -->
+	<display-name>
+		Root User Interactions	
+	</display-name>
+	<description>
+		This is the Web application in which we
+		demonstrate our JSP and Servlet examples.
+	</description>
+	<!-- Servlet definitions and mappings  -->
+    <servlet>
+        <description>
+            Enterprise Database System
+        </description>
+        <servlet-name>alpha</servlet-name>
+        <servlet-class>RootLevel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>alpha</servlet-name>
+        <url-pattern>/RootLevel</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <description>
+            Enterprise Database System
+        </description>
+        <servlet-name>base</servlet-name>
+        <servlet-class>BaseUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>base</servlet-name>
+        <url-pattern>/BaseUser</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <description>
+            Enterprise Database System
+        </description>
+        <servlet-name>charlie</servlet-name>
+        <jsp-file>/Project4Assignment/src/main/webapp/root.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>charlie</servlet-name>
+        <url-pattern>/root</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>clientuserservlet</servlet-name>
+        <servlet-class>ClientUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>clientuserservlet</servlet-name>
+        <url-pattern>/ClientUserApp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>suppliersinsertservlet</servlet-name>
+        <servlet-class>SuppliersInsertServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>suppliersinsertservlet</servlet-name>
+        <url-pattern>/Suppliers</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>partsinsertservlet</servlet-name>
+        <servlet-class>PartsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>partsinsertservlet</servlet-name>
+        <url-pattern>/Parts</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>jobsinsertservlet</servlet-name>
+        <servlet-class>JobsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jobsinsertservlet</servlet-name>
+        <url-pattern>/Jobs</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>shipmentsinsertservlet</servlet-name>
+        <servlet-class>ShipmentsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shipmentsinsertservlet</servlet-name>
+        <url-pattern>/Shipments</url-pattern>
+    </servlet-mapping>
+</web-app>
